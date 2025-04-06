@@ -68,7 +68,7 @@ QString CardZone::getTranslatedName(bool theirOwn, GrammaticalCase gc) const
                 return (theirOwn ? tr("their library", "reveal zone")
                                  : tr("%1's library", "reveal zone").arg(ownerName));
             case CaseShuffleZone:
-                return (theirOwn ? tr("their library", "shuffle") : tr("%1's library", "shuffle").arg(ownerName));
+                return (theirOwn ? tr("of their library", "shuffle") : tr("of %1's library", "shuffle").arg(ownerName));
             default:
                 return (theirOwn ? tr("their library", "nominative") : tr("%1's library", "nominative").arg(ownerName));
         }
